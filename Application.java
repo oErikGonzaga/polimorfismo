@@ -14,13 +14,16 @@ public class Application {
         System.out.println("Informe o valor do produto: ");
         double valorProduto = scanner.nextDouble();
 
+        String saoPaulo = "SP";
+        String rioDeJaneiro = "RJ";
+
         CalculadoraICMS calculadora = null;
 
-        if ("SP".equalsIgnoreCase(estado)){
+        if (saoPaulo.equalsIgnoreCase(estado)){
             calculadora = new CalculadoraSP();
         }
 
-        if ("RJ".equalsIgnoreCase(estado)){
+        if (rioDeJaneiro.equalsIgnoreCase(estado)){
             calculadora = new CalculadoraRJ();
         }
 
